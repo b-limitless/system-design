@@ -1,0 +1,226 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="Page-1" id="6W-_3RMbtciQaMjJEple">
+    <mxGraphModel dx="5460" dy="3351" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" tooltip="100/rps" id="iiKkdMvMzcyhLk0lDtgT-1">
+          <mxCell style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.users;" parent="1" vertex="1">
+            <mxGeometry x="-1570" y="-731.5" width="60" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Send lat and lng of the users using websokcet" id="iiKkdMvMzcyhLk0lDtgT-3">
+          <mxCell style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-2" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="-1139" y="-685" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-2" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="1" vertex="1">
+          <mxGeometry x="-1640" y="-880" width="200" height="390" as="geometry" />
+        </mxCell>
+        <UserObject label="" tooltip="ELB follow the same target group name to distribute the request. A target group can have multiple EC2 instance " id="iiKkdMvMzcyhLk0lDtgT-28">
+          <mxCell style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-6" target="iiKkdMvMzcyhLk0lDtgT-42" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="-799" y="-790" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-55" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-6" target="iiKkdMvMzcyhLk0lDtgT-46" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-56" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-6" target="iiKkdMvMzcyhLk0lDtgT-47" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-57" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-6" target="iiKkdMvMzcyhLk0lDtgT-49" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-6" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.elastic_load_balancing;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-1139" y="-731.5" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-43" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-42" target="iiKkdMvMzcyhLk0lDtgT-49" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-519" y="-940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-44" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-42" target="iiKkdMvMzcyhLk0lDtgT-47" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-499" y="-799.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-45" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-42" target="iiKkdMvMzcyhLk0lDtgT-46" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-529" y="-669.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-42" value="Target Group&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="-779" y="-850" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-50" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-46" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-279" y="-639.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-46" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.ec2_m1_mac_instance;" parent="1" vertex="1">
+          <mxGeometry x="-829" y="-378.9999999999998" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-51" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-47" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-267" y="-638.4999999999998" as="targetPoint" />
+            <mxPoint x="-439" y="-773.6428571428569" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-47" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.ec2_m1_mac_instance;" parent="1" vertex="1">
+          <mxGeometry x="-739" y="-487.9999999999998" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-52" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-49" target="iiKkdMvMzcyhLk0lDtgT-54" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-300.4054054054054" y="-675.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-49" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.ec2_m1_mac_instance;" parent="1" vertex="1">
+          <mxGeometry x="-679" y="-638.4999999999998" width="48" height="48" as="geometry" />
+        </mxCell>
+        <UserObject label="" tooltip="Managed my auto scaling group" id="iiKkdMvMzcyhLk0lDtgT-54">
+          <mxCell style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.auto_scaling;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
+            <mxGeometry x="-289" y="-671.5" width="79.5" height="76.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Web Socket Request 1000 rps, Sends lat and lng and payload" id="iiKkdMvMzcyhLk0lDtgT-60">
+          <mxCell style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-58" edge="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="260" y="1180" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-58" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="1" vertex="1">
+          <mxGeometry x="-260" y="980" width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-59" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.users;" parent="1" vertex="1">
+          <mxGeometry x="-199" y="1130" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-70" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-61" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="1350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="" tooltip="{lat: 1, lng: 2, userId: 34} I will put this data in a queue for the search " id="iiKkdMvMzcyhLk0lDtgT-77">
+          <mxCell style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-61" target="iiKkdMvMzcyhLk0lDtgT-62" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="{lat: 3, lng:42, userId: 434} I will put this data in a queue for the search " id="iiKkdMvMzcyhLk0lDtgT-78">
+          <mxCell style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-61" target="iiKkdMvMzcyhLk0lDtgT-65" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-61" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.elastic_load_balancing;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="270" y="1128" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <UserObject label="" tooltip="Put the user request to sql because finding a car near by the user location might take time and it perhaps will be async task" id="iiKkdMvMzcyhLk0lDtgT-82">
+          <mxCell style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-62" target="iiKkdMvMzcyhLk0lDtgT-81" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-62" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.ec2_m1_mac_instance;" parent="1" vertex="1">
+          <mxGeometry x="770" y="910" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-65" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.ec2_m1_mac_instance;" parent="1" vertex="1">
+          <mxGeometry x="770" y="982" width="48" height="48" as="geometry" />
+        </mxCell>
+        <UserObject label="" tooltip="Target Group through which ELB will distribute the request" id="iiKkdMvMzcyhLk0lDtgT-72">
+          <mxCell style="verticalLabelPosition=bottom;sketch=0;html=1;fillColor=#282828;strokeColor=none;verticalAlign=top;pointerEvents=1;align=center;shape=mxgraph.cisco_safe.people_places_things_icons.icon1;" parent="1" vertex="1">
+            <mxGeometry x="560" y="1340" width="46.5" height="50" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-73" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.645;entryY=0.03;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-62" target="iiKkdMvMzcyhLk0lDtgT-72" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-74" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.833;entryY=0.08;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-65" target="iiKkdMvMzcyhLk0lDtgT-72" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="" tooltip="Message is added to the queue with for example&#xa;&#xa;[{&#xa; userId: 1,&#xa; lat: 1,&#xa;  lng: 1&#xa;}, {}]" id="iiKkdMvMzcyhLk0lDtgT-81">
+          <mxCell style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.sqs;fillColor=#D9A741;gradientColor=none;" parent="1" vertex="1">
+            <mxGeometry x="1100" y="910" width="76.5" height="93" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-83" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-65" target="iiKkdMvMzcyhLk0lDtgT-81" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-88" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-84" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="960.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-84" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.ec2_m1_mac_instance;" parent="1" vertex="1">
+          <mxGeometry x="1550" y="850" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-89" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-85" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="960.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-85" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.ec2_m1_mac_instance;" parent="1" vertex="1">
+          <mxGeometry x="1550" y="913" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-91" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-86" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190" y="960.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-86" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.ec2_m1_mac_instance;" parent="1" vertex="1">
+          <mxGeometry x="1550" y="1045" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-90" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-87" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190" y="960.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-87" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.ec2_m1_mac_instance;" parent="1" vertex="1">
+          <mxGeometry x="1550" y="975" width="48" height="48" as="geometry" />
+        </mxCell>
+        <UserObject label="" tooltip="const Redis = require(&#39;ioredis&#39;);&#xa;&#xa;// Create a Redis client&#xa;const redis = new Redis({&#xa;  host: &#39;localhost&#39;,  // Redis server address&#xa;  port: 6379          // Redis server port (default 6379)&#xa;});&#xa;&#xa;// Add geospatial data (latitude, longitude, and a name for the location)&#xa;async function addGeoData() {&#xa;  await redis.geoadd(&#39;taxis&#39;, 13.4050, 52.5200, &#39;Taxi_1&#39;); // Berlin example (lat, lng, name)&#xa;  await redis.geoadd(&#39;taxis&#39;, 13.4055, 52.5205, &#39;Taxi_2&#39;);&#xa;  await redis.geoadd(&#39;taxis&#39;, 13.4060, 52.5210, &#39;Taxi_3&#39;);&#xa;  console.log(&#39;Geospatial data added.&#39;);&#xa;}&#xa;&#xa;// Query taxis within 1km radius&#xa;async function getNearbyTaxis(latitude, longitude, radiusInKm) {&#xa;  // `radiusInKm` is in kilometers; 1km = 1000 meters&#xa;  const result = await redis.georadius(&#39;taxis&#39;, longitude, latitude, radiusInKm, &#39;km&#39;);&#xa;  console.log(`Taxis within ${radiusInKm} km:`, result);&#xa;}&#xa;&#xa;// Example: Adding data and then querying for taxis within 1 KM&#xa;async function run() {&#xa;  await addGeoData();  // Add some taxi locations&#xa;&#xa;  const userLatitude = 52.5200;   // User&#39;s latitude (for example, Berlin)&#xa;  const userLongitude = 13.4050;  // User&#39;s longitude&#xa;  const radius = 1;               // 1 KM radius&#xa;&#xa;  await getNearbyTaxis(userLatitude, userLongitude, radius);&#xa;}&#xa;&#xa;run().catch(err =&gt; console.error(err));&#xa;" id="iiKkdMvMzcyhLk0lDtgT-92">
+          <mxCell style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" parent="1" vertex="1">
+            <mxGeometry x="1960" y="938" width="50" height="42" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-93" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.05;entryY=0.69;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-84" target="iiKkdMvMzcyhLk0lDtgT-92" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-94" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0.893;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-85" target="iiKkdMvMzcyhLk0lDtgT-92" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-95" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.025;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-87" target="iiKkdMvMzcyhLk0lDtgT-92" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-96" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.15;entryY=0.952;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="iiKkdMvMzcyhLk0lDtgT-86" target="iiKkdMvMzcyhLk0lDtgT-92" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-97" value="1. How those subscriber will send the message to end users using websocket" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="870" y="1800" width="570" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iiKkdMvMzcyhLk0lDtgT-98" value="2. How the location will get keep updated of the cars when they are moving" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="880" y="1840" width="550" height="30" as="geometry" />
+        </mxCell>
+        <UserObject label="" tooltip="Websocket message will be published by {&#xa;  requestId,&#xa;  userId&#xa;}&#xa;&#xa;perhaps any other things as well" id="Hjirb95OTWpKHehRui7p-1">
+          <mxCell style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=sched" vertex="1" parent="1">
+            <mxGeometry x="1550" y="650" width="50" height="48" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Emmit the event that they found the taxi or not after 30 seconds and remove the messag from the queue if we dont want to process the requst again" id="Hjirb95OTWpKHehRui7p-6">
+          <mxCell style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="iiKkdMvMzcyhLk0lDtgT-84" target="Hjirb95OTWpKHehRui7p-1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tooltip="Auto Scaling Group" id="Hjirb95OTWpKHehRui7p-8">
+          <mxCell style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#DD344C;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.resource_access_manager;" vertex="1" parent="1">
+            <mxGeometry x="1120" y="1160" width="78" height="78" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Hjirb95OTWpKHehRui7p-9" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.cloudwatch;fillColor=#759C3E;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1094" y="640" width="82.5" height="93" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
