@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
   <diagram name="Page-1" id="6W-_3RMbtciQaMjJEple">
-    <mxGraphModel dx="4280" dy="4873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4691" dy="5122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -416,16 +416,11 @@
             <mxPoint x="159.61867487605923" y="-2170.002423583258" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <UserObject label="" tooltip="The taxi driver accept the ride request&#xa;it can send the data such as {&#xa;   request: id, &#xa;   status: accepted&#xa;}&#xa;&#xa;&#xa;This was the taxi booked it will keep sending the request using websocket. It can send following infomration&#xa;&#xa;shardKey: 1&#xa;lat&#xa;lng&#xa;driverId" id="Hjirb95OTWpKHehRui7p-72">
+        <UserObject label="" tooltip="The taxi driver accept the ride request&#xa;it can send the data such as {&#xa;   request: id, &#xa;   status: accepted&#xa;}&#xa;&#xa;&#xa;This was the taxi booked it will keep sending the request using websocket. It can send following infomration&#xa;&#xa;shardKey: 1&#xa;lat&#xa;lng&#xa;driverId&#xa;&#xa;After initial communication basically it will fetch current location every 5 seconds and sends the location through the websockets." id="Hjirb95OTWpKHehRui7p-72">
           <mxCell style="shape=mxgraph.signs.transportation.taxi;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
             <mxGeometry x="100" y="-1460" width="98" height="94" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="Hjirb95OTWpKHehRui7p-76" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Hjirb95OTWpKHehRui7p-75" target="Hjirb95OTWpKHehRui7p-77">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="159.75" y="-2680" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <UserObject label="" tooltip="ALB" id="Hjirb95OTWpKHehRui7p-75">
           <mxCell style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.elastic_load_balancing;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
             <mxGeometry x="121.5" y="-2290" width="76.5" height="93" as="geometry" />
@@ -433,16 +428,45 @@
         </UserObject>
         <UserObject label="" tooltip="Kinesis data streaming will receive the current location in real time from the app server and will send to specified shard based on partition key&#xa;" id="Hjirb95OTWpKHehRui7p-77">
           <mxCell style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.kinesis;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
-            <mxGeometry x="126" y="-2720.5" width="67.5" height="81" as="geometry" />
+            <mxGeometry x="912.5" y="-2940" width="67.5" height="81" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="" tooltip="Kinesis Analytics can compute the distance in real time and then send this information using " id="Hjirb95OTWpKHehRui7p-78">
           <mxCell style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.kinesis_analytics;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
-            <mxGeometry x="112.25" y="-3020" width="73.5" height="75" as="geometry" />
+            <mxGeometry x="694.75" y="-3200" width="73.5" height="75" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="Hjirb95OTWpKHehRui7p-79" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.665;entryY=0.804;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Hjirb95OTWpKHehRui7p-77" target="Hjirb95OTWpKHehRui7p-78">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hjirb95OTWpKHehRui7p-82" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Hjirb95OTWpKHehRui7p-80">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-770" y="-2669" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="" tooltip="This system will receive current taxi location and compute estimate time to arrive in initial phase and will send this event to the users" id="Hjirb95OTWpKHehRui7p-80">
+          <mxCell style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=sched" vertex="1" parent="1">
+            <mxGeometry x="-80" y="-2730" width="145.83" height="140" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Hjirb95OTWpKHehRui7p-81" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.72;entryY=0.99;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Hjirb95OTWpKHehRui7p-75" target="Hjirb95OTWpKHehRui7p-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hjirb95OTWpKHehRui7p-85" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" vertex="1" parent="1">
+          <mxGeometry x="-1000" y="-2870" width="200" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="Hjirb95OTWpKHehRui7p-86" value="5 minutes to arrive" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-970" y="-2679" width="160" height="30" as="geometry" />
+        </mxCell>
+        <UserObject label="" tooltip="Native GPS device approach t fetch the current taxi location basically this can most most effecient and cost effective way of accessing the current location of the taxi" id="Hjirb95OTWpKHehRui7p-89">
+          <mxCell style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Hjirb95OTWpKHehRui7p-88">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="80.00000000000091" y="-1425" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="Hjirb95OTWpKHehRui7p-88" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.location;" vertex="1" parent="1">
+          <mxGeometry x="-400" y="-1510" width="154" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
