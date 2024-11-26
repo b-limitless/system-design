@@ -147,11 +147,108 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="9H_1bvW_YGaWP5Uugf9j" name="Page-2">
-    <mxGraphModel dx="3420" dy="2513" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram id="9H_1bvW_YGaWP5Uugf9j" name="fare calculation">
+    <mxGraphModel dx="4940" dy="3885" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-3" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startSize=8;endSize=8;" edge="1" parent="1" source="fH46dBZZeX3DoXTXhk_b-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1480" y="-1419" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="" tooltip="This taxi will communicate through websocket will send few information such as lat, lant and the sessionsession id when ride was started&#xa;&#xa;{&#xa; &quot;session_id&quot;: &quot;abc123&quot;,&#xa;  &quot;lat&quot;: 25.2048,&#xa;  &quot;lng&quot;: 55.2708,&#xa;  &quot;timestamp&quot;: 1697939200000&#xa;}" id="fH46dBZZeX3DoXTXhk_b-1">
+          <mxCell style="shape=mxgraph.signs.transportation.taxi;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;gradientColor=none;" vertex="1" parent="1">
+            <mxGeometry x="-1727" y="-1441" width="50" height="44" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-22" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startSize=8;endSize=8;" edge="1" parent="1" source="fH46dBZZeX3DoXTXhk_b-6" target="fH46dBZZeX3DoXTXhk_b-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="" tooltip="Hey take this data with partion key to Kines to compute the fare for the ride&#xa;&#xa;const AWS = require(&#39;aws-sdk&#39;);&#xa;const kinesis = new AWS.Kinesis({ region: &#39;your-region&#39; });&#xa;&#xa;const sendToKinesis = async (data) =&gt; {&#xa;  const params = {&#xa;    Data: JSON.stringify(data),&#xa;    PartitionKey: data.session_id, // Partition by session&#xa;    StreamName: &#39;TaxiDataStream&#39;,&#xa;  };&#xa;  await kinesis.putRecord(params).promise();&#xa;};&#xa;&#xa;// Example WebSocket handler&#xa;const handleWebSocketMessage = async (message) =&gt; {&#xa;  const taxiData = JSON.parse(message);&#xa;  await sendToKinesis(taxiData);&#xa;};&#xa;" id="fH46dBZZeX3DoXTXhk_b-6">
+          <mxCell style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ec2;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+            <mxGeometry x="-1198" y="-1540" width="50" height="44" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-7" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.classic_load_balancer;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-1472" y="-1446" width="50" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-23" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startSize=8;endSize=8;" edge="1" parent="1" source="fH46dBZZeX3DoXTXhk_b-8" target="fH46dBZZeX3DoXTXhk_b-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-8" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ec2;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-1195" y="-1410" width="50" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-16" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startSize=8;endSize=8;" edge="1" parent="1" source="fH46dBZZeX3DoXTXhk_b-9" target="fH46dBZZeX3DoXTXhk_b-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-346.66666666666606" y="-861.333333333333" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-9" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ec2;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-1165" y="-1280" width="50" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-10" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startSize=8;endSize=8;entryX=0;entryY=0.79;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fH46dBZZeX3DoXTXhk_b-7" target="fH46dBZZeX3DoXTXhk_b-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1242" y="-1514" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-11" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.kinesis;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-483" y="-1515" width="50" height="44" as="geometry" />
+        </mxCell>
+        <UserObject label="" tooltip="Redis will store user session data for the distributed purpose so that server does not store any state and any available server can server to the user by connecting to the distributed redis server" id="fH46dBZZeX3DoXTXhk_b-17">
+          <mxCell style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;image=img/lib/mscae/Cache_Redis_Product.svg;" vertex="1" parent="1">
+            <mxGeometry x="-735" y="-1467" width="50" height="42.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-20" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startSize=8;endSize=8;" edge="1" parent="1" source="fH46dBZZeX3DoXTXhk_b-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-220" y="-1512" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="" tooltip="Kinesis data analytics can send data to different destination such as S3, Redshift, DynamoDB, Another KDS, Lamda &#xa;" id="fH46dBZZeX3DoXTXhk_b-25">
+          <mxCell style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fH46dBZZeX3DoXTXhk_b-21" target="fH46dBZZeX3DoXTXhk_b-28">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="118" y="-1455" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-29" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0;entryY=0.18;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fH46dBZZeX3DoXTXhk_b-21" target="fH46dBZZeX3DoXTXhk_b-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="-1365" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="" tooltip="will receive the information about the starting point and based on provided data such as lng and lat it will compute the fare &#xa;&#xa;SELECT &#xa;  session_id,&#xa;  CASE WHEN GEO_DISTANCE_IN_KM(prev_lat, prev_lng, lat, lng) &lt; 0.01 THEN 1 ELSE 0 END AS is_idle,&#xa;  COUNT(*) OVER (PARTITION BY session_id ROWS BETWEEN 12 PRECEDING) AS idle_count&#xa;FROM taxi_stream;&#xa;&#xa;// If taxi is ideal &#xa;SELECT &#xa;  session_id,&#xa;  CASE WHEN GEO_DISTANCE_IN_KM(prev_lat, prev_lng, lat, lng) &lt; 0.01 THEN 1 ELSE 0 END AS is_idle,&#xa;  COUNT(*) OVER (PARTITION BY session_id ROWS BETWEEN 12 PRECEDING) AS idle_count&#xa;FROM taxi_stream;&#xa;&#xa;// Calculate far &#xa;&#xa;SELECT &#xa;  session_id,&#xa;  SUM(distance * 2) AS distance_fare,&#xa;  SUM(idle_count / 12) * 1 AS idle_fare,&#xa;  SUM(distance * 2) + SUM(idle_count / 12) * 1 AS total_fare&#xa;FROM taxi_analytics&#xa;GROUP BY session_id;&#xa;&#xa;Data output by the analytics can be send to differnet sources but in ourcase we store send this data to Another KDS &#xa;&#xa;&#xa;" id="fH46dBZZeX3DoXTXhk_b-21">
+          <mxCell style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.kinesis_analytics;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+            <mxGeometry x="-231" y="-1530" width="50" height="44" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-24" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startSize=8;endSize=8;" edge="1" parent="1" source="fH46dBZZeX3DoXTXhk_b-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-485" y="-1490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-28" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.s3;fillColor=#E05243;gradientColor=none;labelBackgroundColor=none;labelBorderColor=default;" vertex="1" parent="1">
+          <mxGeometry x="163" y="-1486" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-30" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.redshift;fillColor=#2E73B8;gradientColor=none;labelBackgroundColor=none;labelBorderColor=default;" vertex="1" parent="1">
+          <mxGeometry x="120" y="-1295.5" width="67.5" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-31" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.kinesis;fillColor=#F58534;gradientColor=none;labelBackgroundColor=none;labelBorderColor=default;" vertex="1" parent="1">
+          <mxGeometry x="153" y="-1636" width="67.5" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-32" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fH46dBZZeX3DoXTXhk_b-21" target="fH46dBZZeX3DoXTXhk_b-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="-1550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-33" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda;fillColor=#F58534;gradientColor=none;labelBackgroundColor=none;labelBorderColor=default;" vertex="1" parent="1">
+          <mxGeometry x="115.5" y="-1825" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="fH46dBZZeX3DoXTXhk_b-34" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="fH46dBZZeX3DoXTXhk_b-21" target="fH46dBZZeX3DoXTXhk_b-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="-1700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
