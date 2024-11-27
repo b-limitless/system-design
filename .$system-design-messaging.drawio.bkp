@@ -148,7 +148,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="9H_1bvW_YGaWP5Uugf9j" name="fare calculation">
-    <mxGraphModel dx="4940" dy="3885" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3026" dy="2751" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -233,9 +233,11 @@
         <mxCell id="fH46dBZZeX3DoXTXhk_b-30" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.redshift;fillColor=#2E73B8;gradientColor=none;labelBackgroundColor=none;labelBorderColor=default;" vertex="1" parent="1">
           <mxGeometry x="120" y="-1295.5" width="67.5" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="fH46dBZZeX3DoXTXhk_b-31" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.kinesis;fillColor=#F58534;gradientColor=none;labelBackgroundColor=none;labelBorderColor=default;" vertex="1" parent="1">
-          <mxGeometry x="153" y="-1636" width="67.5" height="81" as="geometry" />
-        </mxCell>
+        <UserObject label="" tooltip="Kinesis" id="fH46dBZZeX3DoXTXhk_b-31">
+          <mxCell style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.kinesis;fillColor=#F58534;gradientColor=none;labelBackgroundColor=none;labelBorderColor=default;" vertex="1" parent="1">
+            <mxGeometry x="153" y="-1636" width="67.5" height="81" as="geometry" />
+          </mxCell>
+        </UserObject>
         <mxCell id="fH46dBZZeX3DoXTXhk_b-32" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fH46dBZZeX3DoXTXhk_b-21" target="fH46dBZZeX3DoXTXhk_b-31">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="70" y="-1550" as="targetPoint" />
